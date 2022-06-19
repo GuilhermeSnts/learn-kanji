@@ -6,6 +6,8 @@ export const StyledFooter = styled("footer", {
     background: '$base',
     color: '$text',
     height: '60px',
+    textAlign: 'center',
+    transition: '$1',
     a: {
         textDecoration: 'underline',
         color: '$secondary'
