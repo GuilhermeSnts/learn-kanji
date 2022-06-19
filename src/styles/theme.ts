@@ -10,15 +10,15 @@ export const { theme, styled, css } = createStitches({
             base: '#f8f5f2',
         },
         space: {
-            1: '8px',
-            2: '16px',
-            3: '32px',
+            sm: '8px',
+            md: '16px',
+            lg: '32px',
         },
         fontSizes: {
-            1: '1rem',
-            2: '1.2rem',
-            3: '1.8rem',
-            4: '2rem',
+            sm: '1rem',
+            md: '1.2rem',
+            lg: '1.8rem',
+            xl: '2rem',
         },
         fonts: {
             untitled: 'Untitled Sans, apple-system, sans-serif',
@@ -47,6 +47,11 @@ export const { theme, styled, css } = createStitches({
             1: 'all 0.3s cubic-bezier(.25,.8,.25,1)'
         },
     },
+    media: {
+        phone: '(min-width: 640px)',
+        tablet: '(min-width: 768px)',
+        desktop: '(min-width: 1024px)',
+      },
 });
 
 export const darkTheme = createTheme({

@@ -1,7 +1,7 @@
 import { styled } from "@/styles/theme";
 
 export const StyledHeader = styled("header", {
-  padding: "$2",
+  padding: "$md",
   width: "100%",
   height: "60px",
   background: "$base",
@@ -10,7 +10,7 @@ export const StyledHeader = styled("header", {
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
-  transition: "$1",
+  transition: "$sm",
 });
 
 export const LeftSection = styled("div", {
@@ -23,11 +23,11 @@ export const RightSection = styled("div", {
   button: {
     borderRadius: "$sm",
     backgroundColor: "$base",
-    padding: "$1",
+    padding: "$sm",
     border: "none",
     cursor: "pointer",
     boxShadow: "$sm",
-    transition: "$1",
+    transition: "$sm",
     width: "2.5rem",
     height: "2.5rem",
     display: "flex",
