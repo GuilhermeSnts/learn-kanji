@@ -4,14 +4,20 @@ import { Content } from "./components/Content"
 import { Router } from "./router"
 import { globalStyles } from "./styles/globalStyles";
 import { darkTheme, theme } from "./styles/theme";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
 
+  useMemo(() => {
+    const storageTheme = Boolean(localStorage.getItem('app-theme'))
+    setIsDarkTheme(storageTheme)
+  }, [])
+
   globalStyles()
 
   const handleThemeChange = (isDark: boolean) => {
+    localStorage.setItem('app-theme', isDark)
     setIsDarkTheme(isDark)
   }
 
