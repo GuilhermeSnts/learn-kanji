@@ -1,9 +1,10 @@
 import { FunctionComponent } from "react"
+import { StyledHeader } from "./styles"
 
 export const Header: FunctionComponent = () => {
     return (
-        <header>
-            <div>Learn Kanji</div>
-        </header>
+        <StyledHeader>
+            <b>Learn Kanji</b>
+        </StyledHeader>
     )
 }

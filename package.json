@@ -8,9 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stitches/react": "^1.2.8",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "6"
+    "react-router-dom": "6",
+    "vite-tsconfig-paths": "^3.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
