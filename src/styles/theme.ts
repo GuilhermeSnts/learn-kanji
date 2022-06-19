@@ -33,7 +33,9 @@ export const { theme, styled, css } = createStitches({
         borderStyles: {},
         radii: {
             sm: '8px',
-            md: '16px'
+            md: '16px',
+            lg: '32px',
+            xl: '64px',
         },
         shadows: {
             sm: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',

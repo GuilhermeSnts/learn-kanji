@@ -1,13 +1,13 @@
 import { styled } from "@/styles/theme";
 
-export const StyledLevelButton = styled("a", {
-  borderRadius: "$sm",
-  height: "200px",
+export const StyledLessonButton = styled("a", {
+  borderRadius: "$xl",
   boxShadow: "$sm",
   marginBottom: "$md",
   transition: "$1",
   cursor: "pointer",
   display: "flex",
+  backgroundColor: "$accent",
 
   a: {
     width: "100%",
@@ -17,34 +17,20 @@ export const StyledLevelButton = styled("a", {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-  },
-
-  div: {
     fontWeight: "bold",
+    fontSize: "$lg",
+    color: "$base",
   },
 
   "&:hover": {
     boxShadow: "$lg",
     transform: "translateY(-0.25em)",
   },
-  "@tablet": {
-    width: "300px",
-  },
 
-  variants: {
-    availability: {
-      available: {
-        backgroundColor: "$accent",
-        div: {
-          color: "$base",
-        },
-      },
-      unavailable: {
-        backgroundColor: "#base",
-        div: {
-          color: "$accent",
-        },
-      },
-    },
+  height: "120px",
+  width: "120px",
+  "@tablet": {
+    height: "80px",
+    width: "80px",
   },
 });

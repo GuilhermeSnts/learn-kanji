@@ -6,19 +6,20 @@ type LevelButtonProps = {
   code?: string;
   name?: string;
   caption?: string;
+  isAvailable?: boolean;
 };
 
 export const LevelButton: FunctionComponent<LevelButtonProps> = ({
   code,
   name,
   caption,
+  isAvailable,
 }) => {
   return (
-    <StyledLevelButton>
+    <StyledLevelButton availability={isAvailable ? "available" : "unavailable"}>
       <Link to={`/level/${code}`}>
-        <span>
-          {name} - {caption}
-        </span>
+        <div>{name}</div>
+        {!isAvailable && <div className="availability">unavailable</div>}
       </Link>
     </StyledLevelButton>
   );

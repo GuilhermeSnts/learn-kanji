@@ -1,18 +1,20 @@
 import { styled } from "@/styles/theme";
 
-export const StyledLevelSelect = styled("section", {
+export const StyledLessonSelect = styled("section", {
   color: "$primary",
   marginBottom: "$md",
   marginTop: "$lg",
   h2: {
-    marginBottom: "$md",
+    marginBottom: "$lg",
     fontSize: "$lg",
     fontWeight: "normal",
   },
 });
+
 export const StyledList = styled("div", {
   display: "flex",
   flexDirection: "column",
+  alignItems: "center",
 
   "@tablet": {
     flexDirection: "row",
