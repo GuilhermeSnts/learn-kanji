@@ -3,10 +3,8 @@ import { createStitches, createTheme } from '@stitches/react'
 export const { theme, styled, css } = createStitches({
     theme: {
         colors: {
-            main: '##fffffe',
-            text: '#232323',
-            primary: '#f45d48',
-            secondary: '#078080',
+            primary: '#232323',
+            accent: '#f45d48',
             base: '#f8f5f2',
         },
         space: {
@@ -56,10 +54,8 @@ export const { theme, styled, css } = createStitches({
 
 export const darkTheme = createTheme({
     colors: {
-        main: '#232323',
-        text: '#f8f5f2',
-        primary: '#f45d48',
-        secondary: '#078080',
+        primary: '#f8f5f2',
+        accent: '#f45d48',
         base: '#1c1c1c',
     },
   });

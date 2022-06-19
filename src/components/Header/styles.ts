@@ -5,7 +5,7 @@ export const StyledHeader = styled("header", {
   width: "100%",
   height: "60px",
   background: "$base",
-  color: "$text",
+  color: "$primary",
   display: "flex",
   flexDirection: "row",
   alignItems: "center",

@@ -4,12 +4,12 @@ export const StyledFooter = styled("footer", {
     padding: '$md',
     width: '100%',
     background: '$base',
-    color: '$text',
+    color: '$primary',
     height: '60px',
     textAlign: 'center',
     transition: '$sm',
     a: {
         textDecoration: 'underline',
-        color: '$secondary'
+        color: '$accent'
     },
 });

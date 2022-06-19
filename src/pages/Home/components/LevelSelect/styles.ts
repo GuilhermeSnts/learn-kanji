@@ -1,7 +1,7 @@
 import { styled } from "@/styles/theme";
 
 export const StyledLevelSelect = styled("section", {
-  color: "$text",
+  color: "$primary",
   marginBottom: "$md",
   marginTop: "$lg",
   h2: {

@@ -1,10 +1,10 @@
 import { styled } from "@/styles/theme";
 
 export const StyledLevelButton = styled("a", {
-  backgroundColor: "$primary",
+  backgroundColor: "$accent",
   borderRadius: "$sm",
   height: "200px",
-  color: "$text",
+  color: "$primary",
   boxShadow: "$sm",
   marginBottom: "$md",
   transition: "$1",
