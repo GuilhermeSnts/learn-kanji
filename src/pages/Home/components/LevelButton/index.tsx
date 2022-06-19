@@ -1,5 +1,6 @@
 import { StyledLevelButton } from "./styles";
 import { FunctionComponent } from "react";
+import { Link } from "react-router-dom";
 
 type LevelButtonProps = {
   code?: string;
@@ -13,10 +14,12 @@ export const LevelButton: FunctionComponent<LevelButtonProps> = ({
   caption,
 }) => {
   return (
-      <StyledLevelButton href={`/level/${code}`}>
-          <span>
-            {name} - {caption}
-          </span>
-      </StyledLevelButton>
+    <StyledLevelButton>
+      <Link to={`/level/${code}`}>
+        <span>
+          {name} - {caption}
+        </span>
+      </Link>
+    </StyledLevelButton>
   );
 };

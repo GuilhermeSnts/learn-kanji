@@ -10,18 +10,24 @@ export const StyledLevelButton = styled("a", {
   transition: "$1",
   cursor: "pointer",
   display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  textDecoration: "none",
+
+  a: {
+    width: "100%",
+    height: "100%",
+    textDecoration: "none",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
 
   span: {
     color: "$base",
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
 
   "&:hover": {
     boxShadow: "$lg",
-    transform: 'translateY(-0.25em)'
+    transform: "translateY(-0.25em)",
   },
   "@desktop": {
     maxWidth: "300px",
